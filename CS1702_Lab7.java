@@ -55,9 +55,11 @@ public class CS1702_Lab7
 	public static boolean leapYear(int year) 
 	{
 		if ((year % 4) == 0)
+		{
 			return true;
-		else {
-
+		}
+		else 
+		{
 			return false;
 		}
 	}
@@ -119,20 +121,26 @@ public class CS1702_Lab7
 	public static long Fact(int n) 
 	{
 		if (n == 0)
+		{
 			return 1;
+		}
 		else
+		{	
 			return (n * Fact(n - 1));
-	}
-	
+		}
+	}	
 	
 	
 	public static int McCarthy(int x)
     {
         if (x>100)
+        {	
             return x -10;
-        else 
+        }
+        else
+        {	
             return McCarthy(McCarthy(x+11));
+        }
     }
-
 	
 }
